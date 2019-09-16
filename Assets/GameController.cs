@@ -5,21 +5,35 @@ using UnityEngine;
 
 public class GameController : MonoBehaviour
 {
-    float s;
-    Boolean ok = false;
+    float timePassed = 0;
+    int miningSpeed = 3;
+    int bronzeSupply = 3;
+    int silverSupply = 2;
+    int bronzeMined = 0;
+    int silverMined = 0;
     // Start is called before the first frame update
     void Start()
     {
-
+        print("You have mined " + bronzeMined + " bronze and " + silverMined + " silver.");
     }
     // Update is called once per frame
     void Update()
     {
-        s = Time.time;
-        if (s > 3 && ok == false)
+        timePassed = Time.time;
+        if (timePassed > miningSpeed)
         {
-            print("Three seconds have passed...");
-            ok = true;
+            if (bronzeSupply == 0 && silverSupply > 0)
+            {
+                silverMined++;
+                silverSupply--;
+            }
+            if (bronzeSupply > 0)
+            {
+                bronzeMined++;
+                bronzeSupply--;
+            }
+            print("You have mined " + bronzeMined + " bronze and " + silverMined + " silver.");
+            miningSpeed += 3;
         }
     }
 }
