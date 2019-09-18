@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class GameController : MonoBehaviour
 {
-    float timePassed = 0;
     int miningSpeed = 3;
     int bronzeSupply = 3;
     int silverSupply = 2;
@@ -19,8 +18,7 @@ public class GameController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        timePassed = Time.time;
-        if (timePassed > miningSpeed)
+        if (Time.time > miningSpeed)
         {
             if (bronzeSupply == 0 && silverSupply > 0)
             {
