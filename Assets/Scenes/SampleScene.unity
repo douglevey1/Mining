@@ -323,6 +323,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c242ef532a9b2b4b942e2402d1ce9c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  miningSpeed: 3
+  bronzeSupply: 3
+  silverSupply: 2
+  bronzeMined: 0
+  silverMined: 0
+  xPos: 0
+  cubeRed: {fileID: 2424193820901587770, guid: e315ccbcc788e8049b824ab3a6e37ea4, type: 3}
+  cubeWhite: {fileID: 9038759307331567206, guid: 67d564a0b1efac24cbb0ccf6f8ea3bed,
+    type: 3}
+  position: {x: 0, y: 0, z: 0}
 --- !u!4 &1058839428
 Transform:
   m_ObjectHideFlags: 0
