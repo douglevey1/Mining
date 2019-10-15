@@ -324,19 +324,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   miningSpeed: 3
-  bronzeSupply: 3
-  silverSupply: 2
-  goldSupply: 0
-  bronzeMined: 0
-  silverMined: 0
-  goldMined: 0
+  timeToMine: 3
   xPos: 0
   yPos: 0
-  cubeRed: {fileID: 2424193820901587770, guid: e315ccbcc788e8049b824ab3a6e37ea4, type: 3}
-  cubeWhite: {fileID: 9038759307331567206, guid: 67d564a0b1efac24cbb0ccf6f8ea3bed,
+  cubePrefab: {fileID: 4180814430614330518, guid: 363a7cc3d0654f94e9595aaa7ccb92f5,
     type: 3}
-  cubeYellow: {fileID: 1382739975027434389, guid: 42582bcb2b9244e46875f00520ffcd4e,
-    type: 3}
+  myCube: {fileID: 0}
   position: {x: 0, y: 0, z: 0}
 --- !u!4 &1058839428
 Transform:
